@@ -1,0 +1,21 @@
+<%- include ../partials/_header %>
+<h1>Product Creation</h1>
+
+<form method="POST" action="/create" enctype="multipart/form-data">
+  <div>
+    <label>Title</label> <input type="text" placeholder="Title" name="title"/>
+  </div>
+  <div>
+    <label>Price</label> <input type="number" placeholder="Price" name="price"/>
+  </div>
+  <div>
+    <label>Quantity</label> <input type="number" placeholder="Quantity" name="quantity"/>
+  </div>
+  <div>
+	<label>Image</label> <input type="file" name="productImage">
+  </div>
+  <div> <button type="submit">Upload</button> </div>
+</form>
+
+
+<%- include ../partials/_footer %>
